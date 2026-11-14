@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="A football market-value research desk with transparent data, historical testing, and player comparisons.">
+<title>Touchline — Player valuation desk</title>
+<link rel="stylesheet" href="/assets/style.css">
+<link rel="stylesheet" href="/assets/models.css?v=2">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='20' fill='%2318382e'/%3E%3Ctext x='11' y='29' font-size='29' fill='%23d7f36a'%3Et%3C/text%3E%3C/svg%3E">
+<script src="/assets/app.js?v=2" defer></script>
+</head>
+<body>
+<header><a class="brand" href="/" aria-label="Touchline home"><span class="mark">t.</span>touchline<span class="brand-note">THE VALUATION DESK</span></a><nav aria-label="Main navigation"><button class="nav active" data-tab="desk">Scouting desk</button><button class="nav" data-tab="method">Model & data</button><a href="/docs" target="_blank" rel="noopener">API ↗</a></nav><div class="edition">SYNTHETIC DEMO <span>01</span></div></header>
+<main>
+<section class="intro"><div><p class="eyebrow">FOOTBALL INTELLIGENCE / TOP FIVE LEAGUES</p><h1>Look beyond<br>the price tag<span>.</span></h1><p class="lead">A synthetic football valuation demo.<br>Fictional players and values. No market accuracy claimed.</p></div><div class="pitch" aria-hidden="true"><div class="pitch-line"></div><div class="pitch-circle"></div><span class="pitch-dot d1"></span><span class="pitch-dot d2"></span><span class="pitch-dot d3"></span><span class="pitch-dot d4"></span><span class="pitch-label">PERFORMANCE → VALUE</span></div></section>
+<div class="source-banner"><span class="status-dot"></span><p id="source-status">Loading verified data dates…</p><button data-tab="method">View coverage ↗</button></div>
+<p class="error" id="error" role="alert" hidden></p>
+<div id="desk">
+<section class="desk-heading"><div><p class="eyebrow">01 / EXPLORE THE MARKET</p><h2>Find your next conversation.</h2></div><span id="player-count" class="muted"></span></section>
+<div class="filters"><label class="search"><span>⌕</span><input id="search" placeholder="Search a player or club" aria-label="Search a player or club"></label><select id="league" aria-label="Filter by league"><option value="">All five leagues</option><option value="GB1">Premier League</option><option value="ES1">La Liga</option><option value="L1">Bundesliga</option><option value="IT1">Serie A</option><option value="FR1">Ligue 1</option></select><select id="position" aria-label="Filter by position"><option value="">All positions</option><option>Attack</option><option>Midfield</option><option>Defender</option><option>Goalkeeper</option></select></div>
+<div class="workspace"><aside><div class="list-label"><span>PLAYER / CLUB</span><span>SOURCE VALUE</span></div><div id="player-list" aria-live="polite"><p class="empty">Loading players…</p></div><button id="show-more" class="text-button" hidden>Show more players ↓</button></aside><section id="detail" aria-live="polite"><p class="empty">Select a player to open their report.</p></section></div>
+</div>
+<section id="method" hidden><div class="desk-heading"><div><p class="eyebrow">02 / UNDER THE HOOD</p><h2>No mystery numbers.</h2></div></div><div id="method-content"></div></section>
+</main><footer><a class="brand" href="/">touchline<span class="small-dot">.</span></a><p>Estimated market value ≠ transfer fee.<br>A research tool, with room for football's unpredictability.</p><span>BUILT FOR THE GAME.</span></footer>
+</body></html>
